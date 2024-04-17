@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dp" >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:padding="2dp"
+            app:srcCompat="@drawable/food"
+            tools:srcCompat="@drawable/food" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+
+            <TextView
+                android:id="@+id/viewNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/edit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp"
+                    android:text="Precio:"/>
+
+                <TextView
+                    android:id="@+id/viewPrecioProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/edit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp"
+                    android:text=" Cantidad:"/>
+
+                <TextView
+                    android:id="@+id/viewCantidadProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:backgroundTint="#E83535"
+                    android:text="Eliminar" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+
+

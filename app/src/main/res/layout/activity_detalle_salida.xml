@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.DetalleSalida">
+
+    <Button
+        android:id="@+id/btnVolverDetalleSalidaALstConceptoCompra"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red_delete"
+        android:text="Volver"
+        app:icon="@android:drawable/ic_menu_revert"></Button>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:text="Crear nueva salida"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/txtValorUnidadProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:textSize="17dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtCantidadSalida"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text|number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtValorTotalProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:text="Total producto: $"
+            android:minHeight="48dp"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAgregarProductoSalida"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="90dp"
+        android:text="Agregar" />
+
+    <TextView
+        android:id="@+id/txtValorTotalSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20dp"/>
+
+
+
+</LinearLayout>

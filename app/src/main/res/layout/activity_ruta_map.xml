@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.RutaMap">
+
+    <Button
+        android:id="@+id/btnVolverLstProductoAInicio"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/red_delete"
+        android:text="Volver"
+        app:icon="@android:drawable/ic_menu_revert"></Button>
+
+    <TextView
+        android:id="@+id/txtTituloRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Crea tu ruta"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/editFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/label_from"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnCambiarFrom"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Cambiar"
+        android:layout_marginLeft="20dp"/>
+
+
+
+    <TextView
+        android:id="@+id/editTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/label_to"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="DuplicateIds"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btnCambiarTo"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Cambiar"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia: "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo en vehiculo: "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+</LinearLayout>

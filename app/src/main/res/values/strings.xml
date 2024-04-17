@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">STOCKTAKING TECH</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_producto">Nuevo producto</string>
+    <string name="invalid_mail">Ingrese un correo valido</string>
+    <string name="invalid_password">Ingrese una contraseña mayor o igual a 6 digitos</string>
+    <string name="delete">Eliminar</string>
+
+
+    <string name="android_sdk_places_api_key">AIzaSyBGTF4kJWdBNHw4gF7HkYozB4WqNNX3bRA</string>
+    <string name="android_sdk_map_api_key">AIzaSyBGTF4kJWdBNHw4gF7HkYozB4WqNNX3bRA</string>
+
+    <string name="label_from">Direccion Origen: %1$s</string>
+    <string name="label_to">Direccion Destino:  %1$s</string>
+
+    <string name="btn_change">Modificar</string>
+
+    <string name="marker_title_from">Desde</string>
+    <string name="marker_title_to">Hasta</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/home_5_16"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/edit_user_16"
+        android:title="Mi cuenta" />
+
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/icons8_exit_24"
+        android:title="Salir" />
+
+</menu>

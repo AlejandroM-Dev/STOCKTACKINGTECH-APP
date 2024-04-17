@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.stocktakingtech" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".DB.FirebaseApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.STOCKTAKINGTECH"
+        tools:targetApi="31" >
+        <activity
+            android:name=".View.DetalleSalida"
+            android:exported="false" />
+        <activity
+            android:name=".View.RutaMap"
+            android:exported="false" />
+        <activity
+            android:name=".View.Roles"
+            android:exported="false" />
+        <activity
+            android:name=".View.UsuarioReg"
+            android:exported="false" />
+        <activity
+            android:name=".View.LstRoles"
+            android:parentActivityName=".View.Inicio" />
+        <activity
+            android:name=".View.LstClientes"
+            android:parentActivityName=".View.Inicio" />
+        <activity
+            android:name=".View.LstConceptoCompra"
+            android:parentActivityName=".View.Inicio" />
+        <activity
+            android:name=".View.LstDistribuidor"
+            android:parentActivityName=".View.Inicio" />
+        <activity
+            android:name=".View.LstProductos"
+            android:exported="false"
+            android:parentActivityName=".View.Inicio" />
+        <activity
+            android:name=".View.Distribuidores"
+            android:exported="false"
+            android:parentActivityName=".View.Inicio" />
+        <activity
+            android:name=".View.Productos"
+            android:parentActivityName=".View.Inicio" />
+        <activity
+            android:name=".View.Inicio"
+            android:exported="false" />
+        <activity
+            android:name=".View.RegistroUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".View.RecuperarPass"
+            android:exported="false" />
+        <activity
+            android:name=".View.Bienvenido"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/android_sdk_map_api_key" />
+    </application>
+
+</manifest>

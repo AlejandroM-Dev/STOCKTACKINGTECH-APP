@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "64565814950",
+    "firebase_url": "https://stocktacking-tech-default-rtdb.firebaseio.com",
+    "project_id": "stocktacking-tech",
+    "storage_bucket": "stocktacking-tech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64565814950:android:fae430136eb4f2ede9b667",
+        "android_client_info": {
+          "package_name": "com.example.stocktakingtech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64565814950-oh7r3mkdsn0moajr5dl496qdj1ekifk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBouoHOhYudHyEIkPBPrxNS05Pzk366Wp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64565814950-oh7r3mkdsn0moajr5dl496qdj1ekifk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

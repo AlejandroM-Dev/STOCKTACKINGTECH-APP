@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Productos">
+
+    <Button
+        android:id="@+id/btnVolverProductoALstProducto"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/red_delete"
+        android:text="Volver"
+        app:icon="@android:drawable/ic_menu_revert"></Button>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="Crear o editar productos"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Nombre producto"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/txtValorUnidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Valor unidad"
+        android:inputType="number"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/txtCantidadProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Cantidad stock"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDistribuidores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"/>
+
+
+    <CheckBox
+        android:id="@+id/chkActivoProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:checked="true"
+        android:text="Activo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGuardarProducto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnEliminarProducto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/red_delete"
+            android:text="Borrar producto"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

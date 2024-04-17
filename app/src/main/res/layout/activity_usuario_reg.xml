@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.UsuarioReg">
+
+    <Button
+        android:id="@+id/btnVolverUsuarioALstUsuario"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red_delete"
+        android:text="Volver"
+        app:icon="@android:drawable/ic_menu_revert"></Button>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Crear o editar usuarios"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtIdentificacionUsuarioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Numero identificacion"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart"
+        tools:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/txtNombresUsuarioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Nombres"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart"
+        tools:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/txtApellidosUsuarioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart" />
+
+    <EditText
+        android:id="@+id/txtEmailUsuarioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Correo electronico"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart" />
+
+    <EditText
+        android:id="@+id/txtTelefonoUsuarioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart"
+        tools:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/txtDireccionUsuarioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart" />
+
+    <EditText
+        android:id="@+id/txtContrasenaUsuarioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart"
+        tools:inputType="textVisiblePassword" />
+
+    <Spinner
+        android:id="@+id/spinnerRoles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"/>
+
+    <CheckBox
+        android:id="@+id/chkActivoUsuarioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:checked="true"
+        android:text="Activo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGuardarUsuarioReg"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnEliminarUsuarioReg"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/red_delete"
+            android:text="Borrar usuario"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
